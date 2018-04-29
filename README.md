@@ -1,6 +1,6 @@
-Discrete Structures Labs
+Discrete Structures Labs and Small Program Files
 
-Written with C++
+Written in C++ and Python3
 
 Lab 1:
   - Contains mod, prime, factorization functions
@@ -28,9 +28,25 @@ Lab 1:
     - the values at any position x,y outputs (x*y) mod n
 
 Lab 2:
-  - Focus on RSA 
+  - Focus on RSA
   - Contains GCD, extendedGCD, Relative Prime,
     InverseMod, Fermat's Little theorem functions
   - Most have a part to play in the RSA functions for public/private key
     - Encode
     - Decode
+
+BinaryAlg
+  - An algorithm for converting a decimal number into binary representation
+  - This binary representation is not 0/1. It is 1/2, meaning the number:
+      212 in this bin form is         = 2*(2^2) + 1*(2^1) + 2*(2^0)
+                                      = 2*4 + 1*2 + 2*1
+                                      = 8+2+2 = 12
+  - The algorithm scans right to left, filling in 1 values until val > input.
+  - It then reverses, scanning left to right attempting to change the 1's to 2's
+        if such a change keeps val < input. It at returns val = input.
+
+SetBuild
+  - This is a few lines of code used for a Theory of Computation hw question
+  - I used it for finding equivalence classes for certain input sets
+
+  
